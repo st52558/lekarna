@@ -1,0 +1,15 @@
+﻿<Window x:Class="centrala.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:centrala"
+        mc:Ignorable="d"
+        Title="Režim centrála" Height="500" Width="850" ResizeMode="CanMinimize">
+    <Grid Margin="0,0,0,0">
+        <DataGrid Name="FreeBuyGrid" HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="400" MaxColumnWidth="170" SelectionMode="Single" Margin="10,40,0,0" CellEditEnding="FreeBuyValueEdit"/>
+        <DataGrid Name="RecipeBuyGrid" HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="400" MaxColumnWidth="170" SelectionMode="Single" Margin="434,40,0,0" CellEditEnding="RecipeValueEdit"/>
+        <Label Content="Přirážka při prodeji na recept"  HorizontalContentAlignment="Center" Margin="434,14,10,0" VerticalAlignment="Top"/>
+        <Label Content="Přirážka při volném prodeji" HorizontalContentAlignment="Center" Margin="10,14,434,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

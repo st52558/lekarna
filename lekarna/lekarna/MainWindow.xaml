@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lekarna"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <DataGrid HorizontalAlignment="Left" Height="258" Margin="51,86,0,0" VerticalAlignment="Top" Width="377"/>
-        <DataGrid HorizontalAlignment="Left" Height="188" Margin="570,86,0,0" VerticalAlignment="Top" Width="100"/>
-
+        Title="Režim lékárna" Height="493.408" Width="850.643" ResizeMode="CanMinimize">
+    <Grid Margin="0,0,-8,0">
+        <DataGrid Name="SubgroupsGrid" HorizontalAlignment="Left" Height="454" VerticalAlignment="Top" Width="679" MaxColumnWidth="200" SelectionMode="Single" IsReadOnly="True" SelectionChanged="SubgroupChanged"/>
+        <DataGrid Name="FreeBuyGrid" HorizontalAlignment="Left" Height="200" Margin="697,29,0,0" VerticalAlignment="Top" IsReadOnly="True" Width="144" MouseDoubleClick="FreeBuyChanged"/>
+        <DataGrid Name="RecipeGrid" HorizontalAlignment="Left" Height="200" Margin="697,254,0,0" VerticalAlignment="Top" IsReadOnly="True" Width="144" MouseDoubleClick="RecipeBuyChanged"/>
+        <Label Content="Přirážka prodeje na recept" HorizontalContentAlignment="Center" Margin="697,228,12,0" Width="144" VerticalAlignment="Top" FontSize="10"/>
+        <Label Content="Přirážka volného prodeje" HorizontalContentAlignment="Center" Margin="697,3,12,0" Width="144" VerticalAlignment="Top" FontSize="10"/>
     </Grid>
 </Window>
