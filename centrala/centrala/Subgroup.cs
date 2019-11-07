@@ -19,7 +19,7 @@ namespace centrala
         public int G { get; set; }
         public int H { get; set; }
         public int I { get; set; }
-
+        public int Chosen { get; set; }
 
         public Subgroup()
         {
